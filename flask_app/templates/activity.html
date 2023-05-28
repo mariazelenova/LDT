@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Example</title>
+</head>
+<body>
+    <h1>Сколько обычно часов Вы проводите в сидячем положении?</h1>
+    <form>
+        <label for="option-a">
+            <input type="checkbox" id="option-a" name="options" value="A">
+            1-3 часа
+        </label>
+        <br>
+        <label for="option-b">
+            <input type="checkbox" id="option-b" name="options" value="B">
+            3-5 часов
+        </label>
+        <br>
+        <label for="option-c">
+            <input type="checkbox" id="option-c" name="options" value="C">
+            5-8 часов
+        </label>
+        <br>
+        <label for="option-d">
+            <input type="checkbox" id="option-d" name="options" value="D">
+            более 8 часов
+        </label>
+        <br>
+        <input type="submit" value="Готово">
+    </form>
+</body>
+</html>
+{% endblock %}

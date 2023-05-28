@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ввод данных о росте и весе</title>
+</head>
+<body>
+    <h2>Укажите ваш рост:</h2>
+    <input type="number" id="height" placeholder="Рост (см)" required>
+    
+    <h2>Укажите ваш вес:</h2>
+    <input type="number" id="weight" placeholder="Вес (кг)" required>
+</body>
+<form action="/raion" method="GET">
+    <input type="submit" value="Готово">
+  </form>
+</html>
+{% endblock %}

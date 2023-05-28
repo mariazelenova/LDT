@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Example</title>
+</head>
+<body>
+    <h1>Выберите то, чего бы вам хотелось больше:</h1>
+    <form action="/test_dusha" method="GET">
+        <label for="option-a">
+            <input type="checkbox" id="option-a" name="options" value="A">
+            Получить новую профессию
+        </label>
+        <br>
+        <label for="option-b">
+            <input type="checkbox" id="option-b" name="options" value="B">
+            Изучить новый язык
+        </label>
+        <br>
+        <label for="option-c">
+            <input type="checkbox" id="option-c" name="options" value="C">
+            Завести новые знакомства
+        </label>
+        <br>
+        <label for="option-d">
+            <input type="checkbox" id="option-d" name="options" value="D">
+            Научиться новому
+        </label>
+        <br>
+        <input type="submit" value="Готово">
+    </form>
+</body>
+</html>
+{% endblock %}

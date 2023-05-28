@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="http://{{web_host}}:{{web_port}}/recommendations" method="POST">
+  <h2>{% block title %} Укажите информацию о себе {% endblock %}</h2>
+  <div class="container">
+  <div class="jumbotron">
+    <div>
+    <label for="fio">ФИО:</label><br>
+    <input type="text" size="26" name="fio" id="fio">
+    </div>
+    <div class="form-group">
+      <label for="inputDate">Укажите дату рождения:</label>
+      <input type="date" class="form-control" size="26" name="data" id="data">
+    </div>
+    <br>
+    <label for="option-a">
+      <input type="checkbox" id="option-a" name="options" value="A">
+      Зарегистрирован и активно участвую
+  </label>
+  <br>
+  <label for="option-b">
+      <input type="checkbox" id="option-b" name="options" value="B">
+      Зарегистрирован и участвую неактивно
+  </label>
+  <br>
+  <label for="option-c">
+      <input type="checkbox" id="option-c" name="options" value="C">
+      Не зарегистрирован
+  </label>
+  <br>
+</form>
+<form action="/imt" method="GET">
+  <input type="submit" value="Подобрать">
+</form>
+<br>
+<br>
+
+<PRE>
+<CODE>
+{{message}}
+</CODE>
+</PRE>
+</div>
+  </div>
+{% endblock %}

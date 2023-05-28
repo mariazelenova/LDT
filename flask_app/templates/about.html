@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="http://{{web_host}}:{{web_port}}/about" method="GET">
+</form>
+<br>
+<h2>Платформе был отправлен запрос и получен ответ: </h2>
+<br>
+<PRE>
+<CODE>
+Ветка:
+{{branch}}
+<br>
+Билд:
+{{build}}
+</CODE>
+</PRE>
+{% endblock %}

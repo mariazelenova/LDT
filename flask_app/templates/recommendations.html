@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="http://{{web_host}}:{{web_port}}/recommendations" method="GET">
+</form>
+<br>
+<h2>Популярные активности в Москве: </h2>
+<br>
+<PRE>
+<CODE>
+!!!{{title}}!!!
+<br>
+Что?:
+{{data}}
+</CODE>
+</PRE>
+{% endblock %}

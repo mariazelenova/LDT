@@ -1,0 +1,18 @@
+### Project ###
+
+COMPOSE_FILE=docker-compose.yml:docker-compose.local.yml
+COMPOSE_PROJECT_NAME=recommendations
+PROJECT_ENV=local
+
+### APP ###
+
+UID=1000
+
+WEBSERVER_HOST='0.0.0.0'
+WEBSERVER_PORT=11050
+WEBSERVER_HOST_EXTERNAL=11050
+
+BRANCH="develop"
+BUILD="aa9354e3"
+
+PATHS_LOGS="./logs"

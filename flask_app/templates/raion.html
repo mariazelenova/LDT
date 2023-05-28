@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Example</title>
+</head>
+<body>
+    <h1>Выберите свой район из выпадающего списка:</h1>
+    <form action="/test" method="GET">
+        <select name="district">
+            <option value="Академический">Академический</option>
+            <option value="Алексеевский">Алексеевский</option>
+            <option value="Алтуфьевский">Алтуфьевский</option>
+            <option value="Арбат">Арбат</option>
+            <option value="Аэропорт">Аэропорт</option>
+            <option value="Бабушкинский">Бабушкинский</option>
+            <option value="Басманный">Басманный</option>
+            <option value="Беговой">Беговой</option>
+            <option value="Бескудниковский">Бескудниковский</option>
+            <option value="Бибирево">Бибирево</option>
+            <option value="Бирюлёво Восточное">Бирюлёво Восточное</option>
+            <option value="Бирюлёво Западное">Бирюлёво Западное</option>
+            <option value="Богородское">Богородское</option>
+            <option value="Братеево">Братеево</option>
+            <option value="Бутырский">Бутырский</option>
+            <option value="Вешняки">Вешняки</option>
+            <option value="Внуково">Внуково</option>
+            <option value="Войковский">Войковский</option>
+            <option value="Восточное Дегунино">Восточное Дегунино</option>
+            <option value="Восточное Измайлово">Восточное Измайлово</option>
+            <option value="Восточный">Восточный</option>
+            <option value="Выхино-Жулебино">Выхино-Жулебино</option>
+            <option value="Гагаринский">Гагаринский</option>
+            <option value="Головинский">Головинский</option>
+            <option value="Гольяново">Гольяново</option>
+            <option value="Даниловский">Даниловский</option>
+            <option value="Дмитровский">Дмитровский</option>
+            <option value="Донской">Донской</option>
+            <option value="Дорогомилово">Дорогомилово</option>
+            <option value="Замоскворечье">Замоскворечье</option>
+            <option value="Западное Дегунино">Западное Дегунино</option>
+            <option value="Зюзино">Зюзино</option>
+            <option value="Зябликово">Зябликово</option>
+            <option value="Ивановское">Ивановское</option>
+            <option value="Измайлово">Измайлово</option>
+            <option value="Капотня">Капотня</option>
+            <option value="Коньково">Коньково</option>
+            <option value="Коптево">Коптево</option>
+            <option value="Косино-Ухтомский">Косино-Ухтомский</option>
+            <option value="Котловка">Котловка</option>
+            <option value="Красносельский">Красносельский</option>
+            <option value="Крылатское">Крылатское</option>
+            <option value="Крюково">Крюково</option>
+            <option value="Кузьминки">Кузьминки</option>
+            <option value="Кунцево">Кунцево</option>
+            <option value="Куркино">Куркино</option>
+            <option value="Левобережный">Левобережный</option>
+            <option value="Лефортово">Лефортово</option>
+            <option value="Лианозово">Лианозово</option>
+            <option value="Ломоносовский">Ломоносовский</option>
+            <option value="Лосиноостровский">Лосиноостровский</option>
+            <option value="Люблино">Люблино</option>
+            <option value="Марфино">Марфино</option>
+            <option value="Марьина Роща">Марьина Роща</option>
+            <option value="Марьино">Марьино</option>
+            <option value="Матушкино">Матушкино</option>
+            <option value="Метрогородок">Метрогородок</option>
+            <option value="Мещанский">Мещанский</option>
+            <option value="Митино">Митино</option>
+            <option value="Можайский">Можайский</option>
+            <option value="Молжаниновский">Молжаниновский</option>
+            <option value="Москворечье-Сабурово">Москворечье-Сабурово</option>
+            <option value="Нагатино-Садовники">Нагатино-Садовники</option>
+            <option value="Нагатинский Затон">Нагатинский Затон</option>
+            <option value="Нагорный">Нагорный</option>
+            <option value="Некрасовка">Некрасовка</option>
+            <option value="Нижегородский">Нижегородский</option>
+            <option value="Новогиреево">Новогиреево</option>
+            <option value="Новокосино">Новокосино</option>
+            <option value="Ново-Переделкино">Ново-Переделкино</option>
+            <option value="Обручевский">Обручевский</option>
+            <option value="Орехово-Борисово Северное">Орехово-Борисово Северное</option>
+            <option value="Орехово-Борисово Южное">Орехово-Борисово Южное</option>
+            <option value="Останкинский">Останкинский</option>
+            <option value="Отрадное">Отрадное</option>
+            <option value="Очаково-Матвеевское">Очаково-Матвеевское</option>
+            <option value="Перово">Перово</option>
+            <option value="Печатники">Печатники</option>
+            <option value="Покровское-Стрешнево">Покровское-Стрешнево</option>
+            <option value="Преображенское">Преображенское</option>
+            <option value="Пресненский">Пресненский</option>
+            <option value="Проспект Вернадского">Проспект Вернадского</option>
+            <option value="Раменки">Раменки</option>
+            <option value="Ростокино">Ростокино</option>
+            <option value="Рязанский">Рязанский</option>
+            <option value="Савёлки">Савёлки</option>
+            <option value="Савёловский">Савёловский</option>
+            <option value="Свиблово">Свиблово</option>
+            <option value="Северное Бутово">Северное Бутово</option>
+            <option value="Северное Измайлово">Северное Измайлово</option>
+            <option value="Северное Медведково">Северное Медведково</option>
+            <option value="Северное Тушино">Северное Тушино</option>
+            <option value="Северный">Северный</option>
+            <option value="Силино">Силино</option>
+            <option value="Сокол">Сокол</option>
+            <option value="Соколиная Гора">Соколиная Гора</option>
+            <option value="Сокольники">Сокольники</option>
+            <option value="Солнцево">Солнцево</option>
+            <option value="Старое Крюково">Старое Крюков
+
+о</option>
+            <option value="Строгино">Строгино</option>
+            <option value="Таганский">Таганский</option>
+            <option value="Текстильщики">Текстильщики</option>
+            <option value="Тёплый Стан">Тёплый Стан</option>
+            <option value="Тимирязевский">Тимирязевский</option>
+            <option value="Тропарёво-Никулино">Тропарёво-Никулино</option>
+            <option value="Филёвский Парк">Филёвский Парк</option>
+            <option value="Фили-Давыдково">Фили-Давыдково</option>
+            <option value="Хамовники">Хамовники</option>
+            <option value="Ховрино">Ховрино</option>
+            <option value="Хорошёво-Мнёвники">Хорошёво-Мнёвники</option>
+            <option value="Хорошёвский">Хорошёвский</option>
+            <option value="Царицыно">Царицыно</option>
+            <option value="Черёмушки">Черёмушки</option>
+            <option value="Чертаново Центральное">Чертаново Центральное</option>
+            <option value="Чертаново Северное">Чертаново Северное</option>
+            <option value="Чертаново Южное">Чертаново Южное</option>
+            <option value="Щукино">Щукино</option>
+            <option value="Южное Бутово">Южное Бутово</option>
+            <option value="Южное Медведково">Южное Медведково</option>
+            <option value="Южное Тушино">Южное Тушино</option>
+            <option value="Южнопортовый">Южнопортовый</option>
+            <option value="Якиманка">Якиманка</option>
+            <option value="Ярославский">Ярославский</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
+{% endblock %}

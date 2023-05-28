@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Example</title>
+</head>
+<body>
+    <h1>Выберите то, что вам больше нравится:</h1>
+    <form action="/test_telo" method="GET">
+        <label for="option-a">
+            <input type="checkbox" id="option-a" name="options" value="A">
+            Петь
+        </label>
+        <br>
+        <label for="option-b">
+            <input type="checkbox" id="option-b" name="options" value="B">
+            Рисовать
+        </label>
+        <br>
+        <label for="option-c">
+            <input type="checkbox" id="option-c" name="options" value="C">
+            Мастерить
+        </label>
+        <br>
+        <label for="option-d">
+            <input type="checkbox" id="option-d" name="options" value="D">
+            Танцевать
+        </label>
+        <br>
+        <label for="option-e">
+            <input type="checkbox" id="option-e" name="options" value="E">
+            Смотреть спектакли
+        </label>
+        <br>
+        <input type="submit" value="Готово">
+    </form>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Example</title>
+</head>
+<body>
+    <h1>Занимаетесь ли вы спортом?</h1>
+    <form action="/activity" method="GET">
+        <label for="option-a">
+            <input type="checkbox" id="option-a" name="options" value="A">
+            Да
+        </label>
+        <br>
+        <label for="option-b">
+            <input type="checkbox" id="option-b" name="options" value="B">
+            Нет
+        </label>
+        <br>
+        <input type="submit" value="Готово">
+    </form>
+</body>
+</html>
+{% endblock %}
